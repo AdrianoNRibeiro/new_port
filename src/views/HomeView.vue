@@ -9,11 +9,13 @@
       </section>
       <section class="section-content">
         <p>Passionate about programming and creating content for all types of audiences.</p>
-        <p>
-          To find out more about my work
-          <router-link class="nav-link" to="/works">click here...</router-link>
-        </p>
-        <p>This button will go out in:</p>
+        <div class="interation">
+          <p>
+            To find out more about my work
+            <span style="color: #99e051; cursor: pointer">click here...</span>
+          </p>
+        </div>
+        <p style="font-size: 0.9em">This button will go out in: {{ count }}</p>
       </section>
     </main>
     <aside class="aside-perfil">
@@ -60,6 +62,15 @@ h3 {
   font-size: 2em;
 }
 
+p {
+  font-family: 'Allerta Stencil', sans-serif;
+  font-size: 1.1em;
+  font-weight: 400;
+  text-align: start;
+  line-height: 1.5;
+  letter-spacing: 2px;
+}
+
 .img-perfil {
   border-radius: 8px;
 }
@@ -87,6 +98,12 @@ h3 {
 }
 
 .section-content {
-  border: 1px solid blue;
+  width: 80%;
+  margin-left: 16%;
+  padding: 12px;
+}
+
+.interation {
+  display: flex;
 }
 </style>

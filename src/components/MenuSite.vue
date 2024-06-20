@@ -4,9 +4,7 @@
   <div>
     <nav class="navbar navbar-dark bg-dark fixed-top navbar-expand-lg new-color">
       <div class="container-fluid">
-        <router-link class="navbar-brand" to="/"
-          ><img src="/img/LogoTipo.png" alt="Logo" width="150"
-        /></router-link>
+        <router-link class="navbar-brand" to="/"><h4>AR_DIGITAL</h4></router-link>
         <button
           class="navbar-toggler"
           type="button"
@@ -53,5 +51,11 @@
 <style scoped>
 .new-color {
   background-color: #010701 !important;
+}
+
+h4 {
+  font-family: 'Sixtyfour', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
 }
 </style>
