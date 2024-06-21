@@ -137,15 +137,19 @@ p {
 
 @media (max-width: 365px) and (max-height: 776px) {
   h2 {
-    font-size: 2.2em !important;
+    font-size: 2em !important;
+  }
+
+  h3 {
+    font-size: 1em !important;
   }
 
   p {
-    font-size: 0.9em !important;
+    font-size: 0.8em !important;
   }
 
   .aside-perfil img {
-    width: 290px !important;
+    width: 250px !important;
   }
 }
 
