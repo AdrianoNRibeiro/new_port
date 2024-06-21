@@ -195,12 +195,51 @@ p {
   }
 
   .description {
-    border: 1px solid #fff;
     width: 90%;
   }
 
   .description p {
     text-align: center;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 430px) {
+  .principal {
+    flex-direction: column;
+  }
+
+  .main-describe {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .main-describe h3 {
+    text-align: center;
+  }
+
+  .aside-perfil {
+    width: 100%;
+    height: 35vh;
+  }
+
+  h2 {
+    font-size: 2.2em;
+  }
+
+  h3 {
+    font-size: 1.1em;
+  }
+
+  p {
+    font-size: 0.8em;
+  }
+
+  .aside-perfil img {
+    width: 62%;
+  }
+
+  .section-content {
+    width: 100%;
   }
 }
 </style>
