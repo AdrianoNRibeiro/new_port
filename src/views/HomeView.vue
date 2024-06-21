@@ -34,7 +34,7 @@ onMounted(() => {
           </p>
         </div>
         <p style="font-size: 0.9em">
-          This button will go out in:
+          Test: This button will go out in:
           <span style="font-size: 1.8em" id="spanCountdown">{{ counter }}</span>
         </p>
       </section>
