@@ -231,7 +231,7 @@ p {
   }
 
   p {
-    font-size: 0.8em;
+    font-size: 0.9em;
   }
 
   .aside-perfil img {
@@ -256,4 +256,6 @@ p {
     font-size: 0.7em;
   }
 }
+
+/* response (min-425) */
 </style>
