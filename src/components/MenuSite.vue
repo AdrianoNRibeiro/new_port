@@ -4,7 +4,7 @@
   <div>
     <nav class="navbar navbar-dark bg-dark fixed-top navbar-expand-lg new-color">
       <div class="container-fluid">
-        <router-link class="navbar-brand" to="/"><h4>AR_DIGITAL</h4></router-link>
+        <router-link class="navbar-brand centralize" to="/"><h4>AR_DIGITAL</h4></router-link>
         <button
           class="navbar-toggler"
           type="button"
@@ -33,12 +33,12 @@
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
-                <router-link class="nav-link" aria-current="page" to="/contacts"
+                <router-link class="nav-link text-change" aria-current="page" to="/contacts"
                   >Contact</router-link
                 >
               </li>
               <li class="nav-item">
-                <router-link class="nav-link" to="/about">About</router-link>
+                <router-link class="nav-link text-change" to="/about">About</router-link>
               </li>
             </ul>
           </div>
@@ -50,12 +50,30 @@
 
 <style scoped>
 .new-color {
-  background-color: #010701 !important;
+  background-color: #000300 !important;
 }
 
 h4 {
   font-family: 'Sixtyfour', sans-serif;
   font-weight: 400;
   font-size: 1em;
+}
+
+h4:hover {
+  color: #99e051;
+}
+
+.text-change:hover {
+  color: #99e051 !important;
+}
+
+li {
+  font-size: 1.1em;
+  font-family: 'Silkscreen', sans-serif;
+}
+
+.centralize {
+  width: 200px;
+  height: 40px;
 }
 </style>

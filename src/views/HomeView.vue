@@ -1,4 +1,19 @@
-<script setup></script>
+<script setup>
+import { ref, onMounted, onUnmounted } from 'vue'
+const counter = ref(10)
+
+function decrementCounter() {
+  if (counter.value > 0) {
+    counter.value--
+  }
+}
+
+onMounted(() => {
+  const intervalId = setInterval(decrementCounter, 1000)
+
+  onUnmounted(() => clearInterval(intervalId))
+})
+</script>
 
 <template>
   <div class="principal">
@@ -11,15 +26,27 @@
         <p>Passionate about programming and creating content for all types of audiences.</p>
         <div class="interation">
           <p>
-            To find out more about my work
-            <span style="color: #99e051; cursor: pointer">click here...</span>
+            To find out more about my work:
+            <span style="color: #99e051; cursor: pointer" v-if="counter > 0">click here...</span>
+            <span style="color: #99e051" v-if="counter == 0"
+              >atualize a página para recomeçar...</span
+            >
           </p>
         </div>
-        <p style="font-size: 0.9em">This button will go out in: {{ count }}</p>
+        <p style="font-size: 0.9em">
+          This button will go out in:
+          <span style="font-size: 1.8em" id="spanCountdown">{{ counter }}</span>
+        </p>
       </section>
     </main>
     <aside class="aside-perfil">
-      <img src="/img/pt5.png" alt="My Perfil" width="200" class="img-fluid img-perfil" />
+      <img
+        src="/img/pt5.png"
+        alt="My Perfil"
+        width="200"
+        class="img-fluid img-perfil"
+        style="border-radius: 40%; box-shadow: 3px 3px 3px #fff"
+      />
     </aside>
   </div>
 </template>
@@ -60,14 +87,15 @@ h3 {
   font-family: 'Silkscreen', sans-serif;
   font-weight: 700;
   font-size: 2em;
+  text-shadow: 2px 2px 2px #99e051;
 }
 
 p {
   font-family: 'Allerta Stencil', sans-serif;
   font-size: 1.1em;
-  font-weight: 400;
+  font-weight: 600;
   text-align: start;
-  line-height: 1.5;
+  line-height: 1.8;
   letter-spacing: 2px;
 }
 
@@ -105,5 +133,50 @@ p {
 
 .interation {
   display: flex;
+}
+
+@media (max-width: 576px) {
+  h2 {
+    font-size: 2.5em;
+  }
+
+  h3 {
+    font-size: 1.3em;
+  }
+
+  p {
+    font-size: 1em;
+    line-height: 1.7;
+    letter-spacing: 1.8px;
+    text-align: center;
+  }
+
+  .principal {
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .main-describe {
+    width: 90%;
+    height: 55vh;
+  }
+
+  .section-content {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 50px;
+    padding: 0;
+  }
+
+  .aside-perfil {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    padding: 5px;
+  }
+
+  .aside-perfil img {
+    width: 320px;
+  }
 }
 </style>
