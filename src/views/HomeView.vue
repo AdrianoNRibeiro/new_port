@@ -175,13 +175,14 @@ p {
 
 .btn-size-adjust {
   margin-left: 12px;
-  height: 7%;
-  width: 20%;
+  height: 40px;
+  width: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: red;
   font-weight: bold;
+  font-size: 1em;
 }
 
 @media (max-width: 360px) and (max-height: 715px) {
