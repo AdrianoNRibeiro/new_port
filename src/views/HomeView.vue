@@ -135,6 +135,34 @@ p {
   display: flex;
 }
 
+@media (max-width: 360px) and (max-height: 740px) {
+  h2 {
+    font-size: 2.2em !important;
+  }
+
+  p {
+    font-size: 0.9em !important;
+  }
+
+  .aside-perfil img {
+    width: 290px !important;
+  }
+}
+
+@media (max-width: 397px) and (max-height: 830px) {
+  h2 {
+    font-size: 1.9em;
+  }
+
+  h3 {
+    font-size: 1em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+}
+
 @media (max-width: 576px) {
   h2 {
     font-size: 2.5em;
@@ -177,20 +205,6 @@ p {
 
   .aside-perfil img {
     width: 320px;
-  }
-}
-
-@media (max-width: 397px) and (max-height: 830px) {
-  h2 {
-    font-size: 1.9em;
-  }
-
-  h3 {
-    font-size: 1em;
-  }
-
-  p {
-    font-size: 1em;
   }
 }
 
