@@ -26,9 +26,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .ct-total {
   width: 100%;
+  overflow: hidden;
 }
 </style>

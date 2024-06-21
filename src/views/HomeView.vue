@@ -23,7 +23,9 @@ onMounted(() => {
         <h3>A FULLSTACK DEVELOPER</h3>
       </section>
       <section class="section-content">
-        <p>Passionate about programming and creating content for all types of audiences.</p>
+        <div class="description">
+          <p>Passionate about programming and creating content for all types of audiences.</p>
+        </div>
         <div class="interation">
           <p>
             To find out more about my work:
@@ -33,7 +35,7 @@ onMounted(() => {
             >
           </p>
         </div>
-        <p style="font-size: 0.9em">
+        <p class="p-countdown">
           This button will go out in:
           <span style="font-size: 1.8em" id="spanCountdown">{{ counter }}</span>
         </p>
@@ -60,6 +62,10 @@ onMounted(() => {
 body {
   width: 100%;
   height: 100vh;
+}
+
+.p-countdown {
+  font-size: 0.9em;
 }
 
 .principal {
@@ -135,107 +141,66 @@ p {
   display: flex;
 }
 
-@media (max-width: 365px) and (max-height: 776px) {
-  h2 {
-    font-size: 2em !important;
-  }
-
-  h3 {
-    font-size: 1em !important;
-  }
-
-  p {
-    font-size: 0.8em !important;
-  }
-
-  .aside-perfil img {
-    width: 250px !important;
-  }
-}
-
-@media (min-width: 366px) and (min-height: 713px) {
-  h2 {
-    font-size: 1.6em;
-  }
-
-  h3 {
-    font-size: 1em;
-  }
-
-  p {
-    font-size: 1em;
-  }
-}
-
-@media (max-width: 576px) {
-  h2 {
-    font-size: 2.5em;
-  }
-
-  h3 {
-    font-size: 1.3em;
-  }
-
-  p {
-    font-size: 1em;
-    line-height: 1.7;
-    letter-spacing: 1.8px;
-    text-align: center;
-  }
-
+@media (max-width: 360px) and (max-height: 715px) {
   .principal {
     flex-direction: column;
-    margin-top: 0;
   }
 
   .main-describe {
-    width: 90%;
-    height: 55vh;
+    width: 100%;
+    height: 40vh;
   }
 
-  .section-content {
-    width: 100%;
-    margin-left: 0;
-    margin-top: 50px;
-    padding: 0;
+  .main-describe h3 {
+    text-align: center;
   }
 
   .aside-perfil {
     width: 100%;
-    height: 30vh;
-    display: flex;
-    padding: 5px;
+    height: 35vh;
   }
 
-  .aside-perfil img {
-    width: 320px;
-  }
-}
-
-@media (max-width: 991px) {
   h2 {
-    font-size: 2.5em;
+    font-size: 2.2em;
   }
 
   h3 {
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
 
   p {
-    font-size: 1em;
-    line-height: 1.6;
-    letter-spacing: 1.6px;
+    font-size: 0.8em;
   }
 
   .aside-perfil img {
-    width: 450px;
+    width: 63%;
   }
 
   .section-content {
     width: 100%;
-    margin-left: 20px;
-    margin-top: 30px;
-    padding: 5px;
+  }
+
+  .p-countdown {
+    font-size: 0.7em;
+    text-align: center;
+    width: 90%;
+  }
+
+  .interation {
+    width: 90%;
+  }
+
+  .interation p {
+    text-align: center;
+  }
+
+  .description {
+    border: 1px solid #fff;
+    width: 90%;
+  }
+
+  .description p {
+    text-align: center;
   }
 }
 </style>

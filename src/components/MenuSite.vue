@@ -76,4 +76,15 @@ li {
   width: 200px;
   height: 40px;
 }
+
+@media (max-width: 360px) and (max-height: 715px) {
+  h4 {
+    font-size: 0.8em;
+  }
+
+  .new-color {
+    height: 8%;
+    width: 100%;
+  }
+}
 </style>
