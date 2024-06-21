@@ -30,9 +30,7 @@ onMounted(() => {
           <p>
             To find out more about my work:
             <span style="color: #99e051; cursor: pointer" v-if="counter > 0">click here...</span>
-            <span style="color: #99e051" v-if="counter == 0"
-              >atualize a página para recomeçar...</span
-            >
+            <span style="color: #99e051" v-if="counter == 0">restart page...</span>
           </p>
         </div>
         <p class="p-countdown">
@@ -203,7 +201,7 @@ p {
   }
 }
 
-@media (min-width: 361px) and (max-width: 430px) {
+@media (min-width: 361px) and (max-width: 425px) {
   .principal {
     flex-direction: column;
   }
