@@ -179,4 +179,45 @@ p {
     width: 320px;
   }
 }
+
+@media (max-width: 397px) and (max-height: 830px) {
+  h2 {
+    font-size: 1.9em;
+  }
+
+  h3 {
+    font-size: 1em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 991px) {
+  h2 {
+    font-size: 2.5em;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
+
+  p {
+    font-size: 1em;
+    line-height: 1.6;
+    letter-spacing: 1.6px;
+  }
+
+  .aside-perfil img {
+    width: 450px;
+  }
+
+  .section-content {
+    width: 100%;
+    margin-left: 20px;
+    margin-top: 30px;
+    padding: 5px;
+  }
+}
 </style>
