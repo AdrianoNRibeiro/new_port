@@ -34,11 +34,14 @@
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
                 <router-link class="nav-link text-change" aria-current="page" to="/contacts"
-                  >Contact</router-link
+                  >Contatos</router-link
                 >
               </li>
               <li class="nav-item">
-                <router-link class="nav-link text-change" to="/about">About</router-link>
+                <router-link class="nav-link text-change" to="/about">Sobre</router-link>
+              </li>
+              <li class="nav-item">
+                <router-link class="nav-link text-change" to="/works">Trabalhos</router-link>
               </li>
             </ul>
           </div>

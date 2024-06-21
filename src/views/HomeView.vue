@@ -48,10 +48,12 @@ onMounted(() => {
       </section>
       <section class="section-content">
         <div class="description">
-          <p>Passionate about programming and creating content for all types of audiences.</p>
+          <!-- <p>Passionate about programming and creating content for all types of audiences.</p> -->
+          <p>Apaixonado com programaçã e criação de conteúdos para todos os tipos de públicos</p>
         </div>
         <div class="interation">
-          <p>To find out more about:</p>
+          <!-- <p>To find out more about:</p> -->
+          <p>Para saber mais:</p>
           <div class="box-button">
             <button
               v-if="showbutton"
@@ -61,10 +63,12 @@ onMounted(() => {
               :class="{ animate__hinge: counter === 0 }"
               @animationend="handleAnimationEnd"
             >
-              Click here in {{ counter }}
+              <!-- Click here in {{ counter }} -->
+              Click aqui em {{ counter }}
             </button>
           </div>
-          <p class="p-restart" v-if="counter == 0">Restart page...</p>
+          <!-- <p class="p-restart" v-if="counter == 0">Restart page</p> -->
+          <p class="p-restart" v-if="counter == 0">Atualize a página</p>
         </div>
       </section>
     </main>
@@ -329,5 +333,77 @@ p {
 }
 
 @media (min-width: 426px) and (max-width: 560px) {
+  .principal {
+    flex-direction: column;
+  }
+
+  .main-describe {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .aside-perfil {
+    width: 100%;
+    height: 40vh;
+  }
+
+  h2 {
+    font-size: 3.5em;
+    text-align: center;
+  }
+
+  h3 {
+    text-align: center;
+    font-size: 1.7em;
+  }
+
+  p {
+    font-size: 0.9em;
+  }
+
+  .aside-perfil {
+    width: 62%;
+  }
+
+  .section-content {
+    width: 100%;
+  }
+
+  .interation {
+    width: 90%;
+    flex-direction: column;
+  }
+
+  .interation p {
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .p-countdown {
+    width: 90%;
+    text-align: center;
+    font-size: 0.7em;
+  }
+
+  .box-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn-size-adjust {
+    width: 60%;
+    height: 30%;
+    margin-bottom: 15px;
+  }
+
+  .description {
+    width: 90%;
+  }
+
+  .description p {
+    text-align: center;
+    font-size: 1em;
+  }
 }
 </style>
