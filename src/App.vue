@@ -18,6 +18,7 @@ import MenuSite from './components/MenuSite.vue'
 
 body {
   background-image: url('./img/bg-01.jpg');
+  background-image: linear-gradient(15deg, #040c11 0%, #112926 100%);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
