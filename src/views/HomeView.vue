@@ -1,6 +1,8 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
 const counter = ref(10)
+const showbutton = ref(true)
+const animatedButton = ref(null)
 
 function decrementCounter() {
   if (counter.value > 0) {
@@ -8,10 +10,32 @@ function decrementCounter() {
   }
 }
 
+function handleAnimationEnd() {
+  setTimeout(() => {
+    showbutton.value = false
+  }, 1000)
+}
+
+// onMounted(() => {
+//   const intervalId = setInterval(decrementCounter, 1000)
+//   onUnmounted(() => clearInterval(intervalId))
+// })
+
 onMounted(() => {
   const intervalId = setInterval(decrementCounter, 1000)
 
-  onUnmounted(() => clearInterval(intervalId))
+  onMounted(() => {
+    if (animatedButton.value) {
+      animatedButton.value.addEventListener('animationend', handleAnimationEnd)
+    }
+  })
+
+  onUnmounted(() => {
+    clearInterval(intervalId)
+    if (animatedButton.value) {
+      animatedButton.value.removeEventListener('animationend', handleAnimationEnd)
+    }
+  })
 })
 </script>
 
@@ -27,16 +51,33 @@ onMounted(() => {
           <p>Passionate about programming and creating content for all types of audiences.</p>
         </div>
         <div class="interation">
-          <p>
-            To find out more about my work:
-            <span style="color: #99e051; cursor: pointer" v-if="counter > 0">click here...</span>
-            <span style="color: #99e051" v-if="counter == 0">restart page...</span>
-          </p>
+          <p>To find out more about:</p>
+          <button
+            v-if="showbutton"
+            ref="animatedButton"
+            type="button"
+            class="btn btn-warning"
+            :class="{ animate__hinge: counter === 0 }"
+            style="
+              margin-left: 12px;
+              height: 7%;
+              width: 20%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              color: red;
+              font-weight: bold;
+            "
+            @animationend="handleAnimationEnd"
+          >
+            Click here in {{ counter }}
+          </button>
+          <!-- <span style="color: #99e051" v-if="counter == 0">restart page...</span> -->
         </div>
-        <p :class="{ animate__hinge: counter === 0 }">
+        <!-- <p :class="{ animate__hinge: counter === 0 }">
           This button will go out in:
           <span style="font-size: 1.8em" id="spanCountdown">{{ counter }}</span>
-        </p>
+        </p> -->
       </section>
     </main>
     <aside class="aside-perfil">
