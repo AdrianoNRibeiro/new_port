@@ -33,7 +33,7 @@ onMounted(() => {
             <span style="color: #99e051" v-if="counter == 0">restart page...</span>
           </p>
         </div>
-        <p class="p-countdown">
+        <p :class="{ animate__hinge: counter === 0 }">
           This button will go out in:
           <span style="font-size: 1.8em" id="spanCountdown">{{ counter }}</span>
         </p>
