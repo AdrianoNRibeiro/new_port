@@ -135,7 +135,7 @@ p {
   display: flex;
 }
 
-@media (max-width: 360px) and (max-height: 770px) {
+@media (max-width: 365px) and (max-height: 776px) {
   h2 {
     font-size: 2.2em !important;
   }
