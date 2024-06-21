@@ -49,7 +49,7 @@ onMounted(() => {
       <section class="section-content">
         <div class="description">
           <!-- <p>Passionate about programming and creating content for all types of audiences.</p> -->
-          <p>Apaixonado com programaçã e criação de conteúdos para todos os tipos de públicos</p>
+          <p>Apaixonado com programação e criação de conteúdos para todos os tipos de públicos</p>
         </div>
         <div class="interation">
           <!-- <p>To find out more about:</p> -->
@@ -199,10 +199,6 @@ p {
     height: 40vh;
   }
 
-  .main-describe h3 {
-    text-align: center;
-  }
-
   .aside-perfil {
     width: 100%;
     height: 35vh;
@@ -329,6 +325,15 @@ p {
     width: 60%;
     height: 30%;
     margin-bottom: 15px;
+  }
+
+  .description {
+    width: 90%;
+    transform: translateX(-10px);
+  }
+
+  .description p {
+    text-align: center;
   }
 }
 
