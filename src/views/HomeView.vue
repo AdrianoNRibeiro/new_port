@@ -52,32 +52,20 @@ onMounted(() => {
         </div>
         <div class="interation">
           <p>To find out more about:</p>
-          <button
-            v-if="showbutton"
-            ref="animatedButton"
-            type="button"
-            class="btn btn-warning"
-            :class="{ animate__hinge: counter === 0 }"
-            style="
-              margin-left: 12px;
-              height: 7%;
-              width: 20%;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              color: red;
-              font-weight: bold;
-            "
-            @animationend="handleAnimationEnd"
-          >
-            Click here in {{ counter }}
-          </button>
-          <!-- <span style="color: #99e051" v-if="counter == 0">restart page...</span> -->
+          <div class="box-button">
+            <button
+              v-if="showbutton"
+              ref="animatedButton"
+              type="button"
+              class="btn btn-warning btn-size-adjust"
+              :class="{ animate__hinge: counter === 0 }"
+              @animationend="handleAnimationEnd"
+            >
+              Click here in {{ counter }}
+            </button>
+          </div>
+          <p class="p-restart" v-if="counter == 0">Restart page...</p>
         </div>
-        <!-- <p :class="{ animate__hinge: counter === 0 }">
-          This button will go out in:
-          <span style="font-size: 1.8em" id="spanCountdown">{{ counter }}</span>
-        </p> -->
       </section>
     </main>
     <aside class="aside-perfil">
@@ -101,6 +89,11 @@ onMounted(() => {
 body {
   width: 100%;
   height: 100vh;
+}
+
+.p-restart {
+  color: #99e051;
+  margin-left: 12px;
 }
 
 .p-countdown {
@@ -180,6 +173,17 @@ p {
   display: flex;
 }
 
+.btn-size-adjust {
+  margin-left: 12px;
+  height: 7%;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: red;
+  font-weight: bold;
+}
+
 @media (max-width: 360px) and (max-height: 715px) {
   .principal {
     flex-direction: column;
@@ -227,6 +231,7 @@ p {
 
   .interation {
     width: 90%;
+    flex-direction: column;
   }
 
   .interation p {
@@ -239,6 +244,18 @@ p {
 
   .description p {
     text-align: center;
+  }
+
+  .box-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn-size-adjust {
+    width: 50%;
+    height: 15%;
+    margin-bottom: 15px;
   }
 }
 
@@ -283,10 +300,12 @@ p {
 
   .interation {
     width: 90%;
+    flex-direction: column;
   }
 
   .interation p {
     text-align: center;
+    flex-direction: column;
   }
 
   .p-countdown {
@@ -294,7 +313,20 @@ p {
     text-align: center;
     font-size: 0.7em;
   }
+
+  .box-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn-size-adjust {
+    width: 60%;
+    height: 30%;
+    margin-bottom: 15px;
+  }
 }
 
-/* response (min-425) */
+@media (min-width: 426px) and (max-width: 560px) {
+}
 </style>
