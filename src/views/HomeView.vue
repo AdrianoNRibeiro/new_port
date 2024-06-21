@@ -241,5 +241,19 @@ p {
   .section-content {
     width: 100%;
   }
+
+  .interation {
+    width: 90%;
+  }
+
+  .interation p {
+    text-align: center;
+  }
+
+  .p-countdown {
+    width: 90%;
+    text-align: center;
+    font-size: 0.7em;
+  }
 }
 </style>
