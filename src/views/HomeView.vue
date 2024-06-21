@@ -153,9 +153,9 @@ p {
   }
 }
 
-@media (max-width: 397px) and (max-height: 830px) {
+@media (min-width: 366px) and (min-height: 713px) {
   h2 {
-    font-size: 1.9em;
+    font-size: 1.6em;
   }
 
   h3 {
