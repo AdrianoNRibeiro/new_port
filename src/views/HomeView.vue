@@ -34,7 +34,7 @@ onMounted(() => {
           </p>
         </div>
         <p style="font-size: 0.9em">
-          Test: This button will go out in:
+          This button will go out in:
           <span style="font-size: 1.8em" id="spanCountdown">{{ counter }}</span>
         </p>
       </section>
@@ -135,7 +135,7 @@ p {
   display: flex;
 }
 
-@media (max-width: 360px) and (max-height: 740px) {
+@media (max-width: 360px) and (max-height: 770px) {
   h2 {
     font-size: 2.2em !important;
   }
