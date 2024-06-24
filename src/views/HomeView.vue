@@ -63,12 +63,10 @@ onMounted(() => {
               :class="{ animate__hinge: counter === 0 }"
               @animationend="handleAnimationEnd"
             >
-              <!-- Click here in {{ counter }} -->
               Click aqui em {{ counter }}
             </button>
           </div>
-          <!-- <p class="p-restart" v-if="counter == 0">Restart page</p> -->
-          <p class="p-restart" v-if="counter == 0">Atualize a página</p>
+          <!-- <p class="p-restart" v-if="counter == 0">Atualize a página</p> -->
         </div>
       </section>
     </main>
@@ -189,7 +187,7 @@ p {
   font-size: 1em;
 }
 
-@media (max-width: 360px) and (max-height: 715px) {
+@media (max-width: 360px) {
   .principal {
     flex-direction: column;
   }
@@ -302,6 +300,7 @@ p {
   .interation {
     width: 90%;
     flex-direction: column;
+    transform: translateX(-10px);
   }
 
   .interation p {

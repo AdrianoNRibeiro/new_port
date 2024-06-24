@@ -11,7 +11,6 @@
           data-bs-toggle="offcanvas"
           data-bs-target="#navbarOffcanvasLg"
           aria-controls="navbarOffcanvasLg"
-          aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -22,10 +21,10 @@
           aria-labelledby="navbarOffcanvasLgLabel"
         >
           <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">ADRIANO RIBEIRO</h5>
+            <h5 class="offcanvas-title font-text-h5" id="offcanvasNavbarLabel">ADRIANO RIBEIRO</h5>
             <button
               type="button"
-              class="btn-close"
+              class="btn-close btn-close-white"
               data-bs-dismiss="offcanvas"
               aria-label="Close"
             ></button>
@@ -66,6 +65,10 @@ h4:hover {
   color: #99e051;
 }
 
+.text-change {
+  color: #fff;
+}
+
 .text-change:hover {
   color: #99e051 !important;
 }
@@ -80,7 +83,11 @@ li {
   height: 40px;
 }
 
-@media (max-width: 360px) and (max-height: 715px) {
+.font-text-h5 {
+  font-family: 'Allerta Stencil', sans-serif;
+}
+
+@media (max-width: 360px) {
   h4 {
     font-size: 0.8em;
   }
