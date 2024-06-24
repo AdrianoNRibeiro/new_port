@@ -1,5 +1,8 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
+import { useRouter } from 'vue-router'
+
+const router = useRouter()
 const counter = ref(10)
 const showbutton = ref(true)
 const animatedButton = ref(null)
@@ -16,10 +19,9 @@ function handleAnimationEnd() {
   }, 1000)
 }
 
-// onMounted(() => {
-//   const intervalId = setInterval(decrementCounter, 1000)
-//   onUnmounted(() => clearInterval(intervalId))
-// })
+function navigateToMyWorksView() {
+  router.push('/works')
+}
 
 onMounted(() => {
   const intervalId = setInterval(decrementCounter, 1000)
@@ -62,11 +64,12 @@ onMounted(() => {
               class="btn btn-warning btn-size-adjust"
               :class="{ animate__hinge: counter === 0 }"
               @animationend="handleAnimationEnd"
+              @click="navigateToMyWorksView"
             >
               Click aqui em {{ counter }}
             </button>
           </div>
-          <!-- <p class="p-restart" v-if="counter == 0">Atualize a página</p> -->
+          <p class="p-restart" v-if="counter == 0">Atualize a página</p>
         </div>
       </section>
     </main>
