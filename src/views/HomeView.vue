@@ -273,7 +273,7 @@ p {
 
   .main-describe {
     width: 100%;
-    height: 50vh;
+    height: 42vh;
   }
 
   .main-describe h3 {
