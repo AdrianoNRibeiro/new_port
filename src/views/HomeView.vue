@@ -1,5 +1,5 @@
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue'
+import { ref, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
 
 const router = useRouter()
@@ -10,6 +10,12 @@ const animatedButton = ref(null)
 function decrementCounter() {
   if (counter.value > 0) {
     counter.value--
+  }
+
+  if (counter.value == 0) {
+    setTimeout(() => {
+      hideButton()
+    }, 1900)
   }
 }
 
@@ -23,21 +29,17 @@ function navigateToMyWorksView() {
   router.push('/works')
 }
 
+const hideButton = () => {
+  let el = document.querySelectorAll('.box-button')
+  el.forEach((element) => element.classList.add('remove'))
+}
+
 onMounted(() => {
-  const intervalId = setInterval(decrementCounter, 1000)
+  setInterval(decrementCounter, 1000)
 
-  onMounted(() => {
-    if (animatedButton.value) {
-      animatedButton.value.addEventListener('animationend', handleAnimationEnd)
-    }
-  })
-
-  onUnmounted(() => {
-    clearInterval(intervalId)
-    if (animatedButton.value) {
-      animatedButton.value.removeEventListener('animationend', handleAnimationEnd)
-    }
-  })
+  if (animatedButton.value) {
+    animatedButton.value.addEventListener('animationend', handleAnimationEnd)
+  }
 })
 </script>
 
@@ -86,6 +88,9 @@ onMounted(() => {
 </template>
 
 <style scoped>
+.remove {
+  display: none;
+}
 :root {
   --color_letters: #99e051;
   --color-background: #010f00;

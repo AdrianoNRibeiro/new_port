@@ -1,11 +1,14 @@
 <script setup>
+import FooterSiteVue from './components/FooterSite.vue'
 import MenuSite from './components/MenuSite.vue'
 </script>
 
 <template>
   <div class="ct-total">
     <MenuSite />
+
     <router-view></router-view>
+    <FooterSiteVue />
   </div>
 </template>
 
