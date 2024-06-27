@@ -6,7 +6,6 @@ import MenuSite from './components/MenuSite.vue'
 <template>
   <div class="ct-total">
     <MenuSite />
-
     <router-view></router-view>
     <FooterSiteVue />
   </div>
@@ -35,6 +34,7 @@ body {
 
 .ct-total {
   width: 100%;
+  height: 100vh;
   overflow: hidden;
 }
 </style>

@@ -31,15 +31,15 @@
           </div>
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
+              <li class="nav-item" data-bs-dismiss="offcanvas">
                 <router-link class="nav-link text-change" aria-current="page" to="/contacts"
                   >Contatos</router-link
                 >
               </li>
-              <li class="nav-item">
+              <li class="nav-item" data-bs-dismiss="offcanvas">
                 <router-link class="nav-link text-change" to="/about">Sobre</router-link>
               </li>
-              <li class="nav-item">
+              <li class="nav-item" data-bs-dismiss="offcanvas">
                 <router-link class="nav-link text-change" to="/works">Trabalhos</router-link>
               </li>
             </ul>
