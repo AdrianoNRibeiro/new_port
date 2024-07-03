@@ -8,66 +8,21 @@
       </div>
       <div class="title-perfil"><h5>PERFIL</h5></div>
     </div>
-    <div
-      class="about-me"
-      style="
-        display: flex;
-        align-items: center;
-        width: 90%;
-        margin-right: auto;
-        margin-left: auto;
-        transform: translateY(-17px);
-        height: 240px;
-        padding: 8px;
-      "
-    >
-      <div
-        class="my-image"
-        style="
-          background-image: url('../img/photoperfil0.jpg');
-          width: 200px;
-          height: 190px;
-          background-size: cover;
-          background-repeat: no-repeat;
-          border-radius: 50%;
-          box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2);
-        "
-      ></div>
-      <div
-        class="name-developer"
-        style="
-          height: 100%;
-          width: 20%;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          margin-left: 20px;
-        "
-      >
-        <h4 style="font-size: 3em; font-family: 'Allerta Stencil', sans-serif; text-align: center">
+    <div class="about-me">
+      <div class="my-image"></div>
+      <div class="name-developer">
+        <h4 class="my-name">
           Adriano <br />
           Ribeiro
         </h4>
-        <p style="font-family: 'Allerta Stencil', sans-serif; text-align: center; font-size: 0.8em">
+        <p class="my-profession">
           <i
             >Fullstack Developer <br />
             Since 2022</i
           >
         </p>
       </div>
-      <div
-        class="register"
-        style="
-          width: 55%;
-          height: 100%;
-          margin-left: 10px;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          padding-left: 2%;
-        "
-      >
+      <div class="register" style="border: 1px solid black">
         <div class="input-group mb-3 w-100 shadow">
           <span
             class="input-group-text p-1 w-25 fw-bold"
@@ -130,85 +85,36 @@
         </div>
       </div>
     </div>
-    <div class="header-resume">
+    <!-- <div class="header-resume">
       <div class="perfil-icon">
         <img src="/img/icon-book.png" alt="" class="w-75" />
       </div>
       <div class="title-perfil"><h5>CURRÍCULO</h5></div>
-    </div>
-    <div
-      class="resume shadow p-2"
-      style="
-        height: 280px;
-        background-color: white;
-        width: 88%;
-        margin-right: auto;
-        margin-left: auto;
-        border-radius: 3px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      "
-    >
+    </div> -->
+    <!-- <div class="resume shadow p-2">
       <div class="experience w-50 h-100 d-flex aling-items-center flex-column">
-        <div
-          class="grade-title w-50 p-1"
-          style="
-            background-color: #8cede8;
-            height: 35px;
-            border-radius: 5px;
-            margin-left: auto;
-            margin-right: auto;
-          "
-        >
+        <div class="grade-title w-50 p-1">
           <h4 class="text-center text-shadow-lg font-principal" style="font-size: 1.4em">
             Graduações
           </h4>
         </div>
-        <div
-          class="university w-100 m-1 mt-3 mb-3 shadow-sm"
-          style="
-            background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
-            border-radius: 5px;
-          "
-        >
+        <div class="university w-100 m-1 mt-3 mb-3 shadow-sm">
           <p class="text-center font-principal">
             Bacharelado em Sistema de Informação na Faculdade Estácio de Sá
           </p>
           <p class="text-center font-principal">em 2022</p>
         </div>
-        <div
-          class="grade-title w-50 p-1"
-          style="
-            background-color: #8cede8;
-            height: 35px;
-            border-radius: 5px;
-            margin-left: auto;
-            margin-right: auto;
-          "
-        >
+        <div class="grade-title w-50 p-1">
           <h4 class="text-center text-shadow-lg font-principal" style="font-size: 1.4em">
             Experiências
           </h4>
         </div>
-        <div
-          class="university w-100 m-1 mt-3 mb-2 shadow-sm"
-          style="
-            background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
-            border-radius: 5px;
-          "
-        >
+        <div class="university w-100 m-1 mt-3 mb-2 shadow-sm">
           <p class="text-center p-1 font-principal">
             MCDONALD'S - Gerente de Plantão e de depósito - 2005 a 2010
           </p>
         </div>
-        <div
-          class="university w-100 m-1 mt-1 mb-3 shadow-sm"
-          style="
-            background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
-            border-radius: 5px;
-          "
-        >
+        <div class="university w-100 m-1 mt-1 mb-3 shadow-sm">
           <p class="text-center font-principal">
             LOJAS REDE - Subgerente de Loja até 2022 e Desenvolvedor de Software de 2022 até o
             momento.
@@ -216,16 +122,7 @@
         </div>
       </div>
       <div class="my-skills w-50 h-100 d-flex align-itens-center flex-column">
-        <div
-          class="grade-title w-50 p-1"
-          style="
-            background-color: #8cede8;
-            height: 35px;
-            border-radius: 5px;
-            margin-left: auto;
-            margin-right: auto;
-          "
-        >
+        <div class="grade-title w-50 p-1">
           <h4 class="text-center text-shadow-lg font-principal" style="font-size: 1.4em">Skills</h4>
         </div>
         <div class="skills-content w-75 ml-5" style="margin-left: 50px">
@@ -326,7 +223,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -334,6 +231,84 @@
 * {
   margin: 0px;
   padding: 0px;
+}
+
+.about-me {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  transform: translateY(-17px);
+  height: 100vh;
+  padding: 8px;
+}
+
+.my-image {
+  background-image: url('../img/photoperfil0.jpg');
+  width: 200px;
+  height: 190px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2);
+}
+
+.name-developer {
+  height: 100%;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
+}
+
+.my-name {
+  font-size: 3em;
+  font-family: 'Allerta Stencil', sans-serif;
+  text-align: center;
+}
+
+.my-profession {
+  font-family: 'Allerta Stencil', sans-serif;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+.resume {
+  height: 280px;
+  background-color: white;
+  width: 88%;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grade-title {
+  background-color: #8cede8;
+  height: 35px;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.register {
+  width: 55%;
+  height: 100%;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 2%;
+}
+
+.university {
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+  border-radius: 5px;
 }
 
 label {
@@ -400,5 +375,66 @@ label {
   margin-top: 5%;
   background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
   border-radius: 5px;
+}
+
+.grade-title {
+  background-color: #8cede8;
+  height: 35px;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 361px) and (max-width: 425px) {
+  .container-about {
+    width: 90%;
+    height: 100vh;
+    margin-top: 70px;
+  }
+
+  .header-perfil,
+  .header-resume {
+    width: 310px;
+    height: 6%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    transform: translateX(-15px);
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .perfil-icon {
+    width: 20%;
+  }
+
+  .perfil-icon img {
+    width: 55%;
+  }
+
+  .header-perfil h5,
+  .header-resume h5 {
+    font-family: 'Allerta Stencil', sans-serif;
+    font-size: 1.3em;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0, 0.1);
+  }
+
+  .my-image {
+    height: 200px;
+    width: 50%;
+    transform: translateY(25px);
+  }
+
+  .about-me {
+    flex-direction: column;
+    height: 500px;
+  }
+
+  .name-developer {
+    width: 100%;
+    height: 180px;
+    margin-top: 15px;
+    transform: translateX(-15px);
+  }
 }
 </style>
