@@ -85,13 +85,13 @@
         </div>
       </div>
     </div>
-    <!-- <div class="header-resume">
+    <div class="header-resume">
       <div class="perfil-icon">
         <img src="/img/icon-book.png" alt="" class="w-75" />
       </div>
       <div class="title-perfil"><h5>CURRÍCULO</h5></div>
-    </div> -->
-    <!-- <div class="resume shadow p-2">
+    </div>
+    <div class="resume shadow p-2">
       <div class="experience w-50 h-100 d-flex aling-items-center flex-column">
         <div class="grade-title w-50 p-1">
           <h4 class="text-center text-shadow-lg font-principal" style="font-size: 1.4em">
@@ -223,7 +223,7 @@
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
   </div>
 </template>
 
