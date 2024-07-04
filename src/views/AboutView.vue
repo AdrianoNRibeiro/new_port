@@ -22,12 +22,20 @@
           >
         </p>
       </div>
-      <div class="register" style="border: 1px solid black">
+      <div
+        class="register"
+        style="
+          width: 55%;
+          height: 100%;
+          margin-left: 10px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding-left: 2%;
+        "
+      >
         <div class="input-group mb-3 w-100 shadow">
-          <span
-            class="input-group-text p-1 w-25 fw-bold"
-            id="inputGroup-sizing-default"
-            style="width: 100px !important"
+          <span class="input-group-text p-1 fw-bold field-name" id="inputGroup-sizing-default"
             >Nome:
           </span>
           <input
@@ -36,13 +44,11 @@
             aria-label="Sizing example input"
             aria-describedby="inputGroup-sizing-default"
             placeholder="Adriano Neves Ribeiro"
+            readonly
           />
         </div>
         <div class="input-group mb-3 w-100 shadow">
-          <span
-            class="input-group-text p-1 w-25 fw-bold"
-            id="inputGroup-sizing-default"
-            style="width: 100px !important"
+          <span class="input-group-text p-1 fw-bold field-name" id="inputGroup-sizing-default"
             >Idade:
           </span>
           <input
@@ -51,13 +57,11 @@
             aria-label="Sizing example input"
             aria-describedby="inputGroup-sizing-default"
             placeholder="38 anos"
+            readonly
           />
         </div>
         <div class="input-group mb-3 w-100 shadow">
-          <span
-            class="input-group-text p-1 w-25 fw-bold"
-            id="inputGroup-sizing-default"
-            style="width: 100px !important"
+          <span class="input-group-text p-1 fw-bold field-name" id="inputGroup-sizing-default"
             >Endereço:
           </span>
           <input
@@ -66,13 +70,11 @@
             aria-label="Sizing example input"
             aria-describedby="inputGroup-sizing-default"
             placeholder="Contagem(MG)-Brasil"
+            readonly
           />
         </div>
         <div class="input-group mb-3 w-100 shadow">
-          <span
-            class="input-group-text p-1 w-25 fw-bold"
-            id="inputGroup-sizing-default"
-            style="width: 100px !important"
+          <span class="input-group-text p-1 fw-bold field-name" id="inputGroup-sizing-default"
             >Família:
           </span>
           <input
@@ -81,6 +83,7 @@
             aria-label="Sizing example input"
             aria-describedby="inputGroup-sizing-default"
             placeholder="Esposa e dois filhos"
+            readonly
           />
         </div>
       </div>
@@ -94,9 +97,7 @@
     <div class="resume shadow p-2">
       <div class="experience w-50 h-100 d-flex aling-items-center flex-column">
         <div class="grade-title w-50 p-1">
-          <h4 class="text-center text-shadow-lg font-principal" style="font-size: 1.4em">
-            Graduações
-          </h4>
+          <h4 class="text-center text-shadow-lg font-title-graduation">Graduações</h4>
         </div>
         <div class="university w-100 m-1 mt-3 mb-3 shadow-sm">
           <p class="text-center font-principal">
@@ -105,9 +106,7 @@
           <p class="text-center font-principal">em 2022</p>
         </div>
         <div class="grade-title w-50 p-1">
-          <h4 class="text-center text-shadow-lg font-principal" style="font-size: 1.4em">
-            Experiências
-          </h4>
+          <h4 class="text-center text-shadow-lg font-title-graduation">Experiências</h4>
         </div>
         <div class="university w-100 m-1 mt-3 mb-2 shadow-sm">
           <p class="text-center p-1 font-principal">
@@ -123,9 +122,9 @@
       </div>
       <div class="my-skills w-50 h-100 d-flex align-itens-center flex-column">
         <div class="grade-title w-50 p-1">
-          <h4 class="text-center text-shadow-lg font-principal" style="font-size: 1.4em">Skills</h4>
+          <h4 class="text-center text-shadow-lg font-title-graduation">Skills</h4>
         </div>
-        <div class="skills-content w-75 ml-5" style="margin-left: 50px">
+        <div class="skills-content w-75">
           <div class="skill-one w-100">
             <label for="">HTML/CSS</label>
             <div
@@ -240,7 +239,7 @@
   margin-right: auto;
   margin-left: auto;
   transform: translateY(-17px);
-  height: 100vh;
+  height: 240px;
   padding: 8px;
 }
 
@@ -270,6 +269,10 @@
   text-align: center;
 }
 
+.field-name {
+  width: 100px;
+}
+
 .my-profession {
   font-family: 'Allerta Stencil', sans-serif;
   text-align: center;
@@ -296,16 +299,6 @@
   margin-right: auto;
 }
 
-.register {
-  width: 55%;
-  height: 100%;
-  margin-left: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-left: 2%;
-}
-
 .university {
   background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
   border-radius: 5px;
@@ -320,6 +313,11 @@ label {
 .font-principal {
   font-family: 'Allerta Stencil', sans-serif;
   font-size: 0.9em;
+}
+
+.font-title-graduation {
+  font-family: 'Allerta Stencil', sans-serif;
+  font-size: 1.4em;
 }
 
 .header-perfil,
@@ -385,31 +383,30 @@ label {
   margin-right: auto;
 }
 
+.skills-content {
+  margin-left: 50px;
+}
+
 @media (min-width: 361px) and (max-width: 425px) {
   .container-about {
     width: 90%;
     height: 100vh;
-    margin-top: 70px;
+    margin-top: 80px;
   }
 
   .header-perfil,
   .header-resume {
-    width: 310px;
+    width: 60%;
     height: 6%;
     background-color: transparent;
     display: flex;
     align-items: center;
-    transform: translateX(-15px);
-    margin-right: auto;
-    margin-left: auto;
+    border-radius: 3px;
+    transform: translateX(-10px);
   }
 
   .perfil-icon {
-    width: 20%;
-  }
-
-  .perfil-icon img {
-    width: 55%;
+    width: 22%;
   }
 
   .header-perfil h5,
@@ -419,22 +416,21 @@ label {
     text-shadow: 2px 2px 2px rgb(0, 0, 0, 0.1);
   }
 
-  .my-image {
-    height: 200px;
-    width: 50%;
-    transform: translateY(25px);
-  }
-
   .about-me {
     flex-direction: column;
-    height: 500px;
+    width: 100%;
+    transform: translateY(0px);
+    height: 200px;
   }
 
-  .name-developer {
-    width: 100%;
-    height: 180px;
-    margin-top: 15px;
-    transform: translateX(-15px);
+  .my-image {
+    background-image: url('../img/photoperfil0.jpg');
+    width: 200px;
+    height: 190px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2);
   }
 }
 </style>
