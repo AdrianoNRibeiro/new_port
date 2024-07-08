@@ -22,25 +22,14 @@
           >
         </p>
       </div>
-      <div
-        class="register"
-        style="
-          width: 55%;
-          height: 100%;
-          margin-left: 10px;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          padding-left: 2%;
-        "
-      >
+      <div class="register">
         <div class="input-group mb-3 w-100 shadow">
           <span class="input-group-text p-1 fw-bold field-name" id="inputGroup-sizing-default"
             >Nome:
           </span>
           <input
             type="text"
-            class="form-control p-2 w-75"
+            class="form-control p-2 w-75 content-input"
             aria-label="Sizing example input"
             aria-describedby="inputGroup-sizing-default"
             placeholder="Adriano Neves Ribeiro"
@@ -53,7 +42,7 @@
           </span>
           <input
             type="text"
-            class="form-control p-2 w-75"
+            class="form-control p-2 w-75 content-input"
             aria-label="Sizing example input"
             aria-describedby="inputGroup-sizing-default"
             placeholder="38 anos"
@@ -66,7 +55,7 @@
           </span>
           <input
             type="text"
-            class="form-control p-2"
+            class="form-control p-2 content-input"
             aria-label="Sizing example input"
             aria-describedby="inputGroup-sizing-default"
             placeholder="Contagem(MG)-Brasil"
@@ -79,7 +68,7 @@
           </span>
           <input
             type="text"
-            class="form-control p-2"
+            class="form-control p-2 content-input"
             aria-label="Sizing example input"
             aria-describedby="inputGroup-sizing-default"
             placeholder="Esposa e dois filhos"
@@ -95,7 +84,7 @@
       <div class="title-perfil"><h5>CURRÍCULO</h5></div>
     </div>
     <div class="resume shadow p-2">
-      <div class="experience w-50 h-100 d-flex aling-items-center flex-column">
+      <div class="experience h-100 d-flex aling-items-center flex-column">
         <div class="grade-title w-50 p-1">
           <h4 class="text-center text-shadow-lg font-title-graduation">Graduações</h4>
         </div>
@@ -297,6 +286,7 @@
   border-radius: 5px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 10px;
 }
 
 .university {
@@ -387,11 +377,26 @@ label {
   margin-left: 50px;
 }
 
+.register {
+  width: 55%;
+  height: 100%;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 2%;
+}
+
+.experience {
+  width: 50%;
+}
+
 @media (min-width: 361px) and (max-width: 425px) {
   .container-about {
     width: 90%;
     height: 100vh;
-    margin-top: 80px;
+    margin-top: 75px;
+    overflow-y: auto;
   }
 
   .header-perfil,
@@ -402,7 +407,11 @@ label {
     display: flex;
     align-items: center;
     border-radius: 3px;
-    transform: translateX(-10px);
+    transform: translateX(0px);
+  }
+
+  .header-resume {
+    margin-top: -25px;
   }
 
   .perfil-icon {
@@ -420,17 +429,55 @@ label {
     flex-direction: column;
     width: 100%;
     transform: translateY(0px);
-    height: 200px;
+    height: 630px;
+    overflow-y: auto;
+    background-color: yellow;
   }
 
   .my-image {
-    background-image: url('../img/photoperfil0.jpg');
     width: 200px;
-    height: 190px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 50%;
-    box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2);
+    height: 200px;
+  }
+
+  .name-developer {
+    width: 100%;
+    height: 150px;
+  }
+
+  .register {
+    width: 100%;
+    height: 290px;
+    margin-left: 0px;
+    padding-left: 2%;
+  }
+
+  .field-name {
+    width: 65px;
+    font-size: 0.8em;
+  }
+
+  .resume {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 150px;
+  }
+
+  .experience {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .grade-title {
+    width: 100% !important;
+  }
+
+  .university {
+    width: 100% !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
   }
 }
 </style>
