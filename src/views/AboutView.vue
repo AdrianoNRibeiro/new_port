@@ -109,7 +109,7 @@
           </p>
         </div>
       </div>
-      <div class="my-skills w-50 h-100 d-flex align-itens-center flex-column">
+      <div class="my-skills h-100 d-flex align-itens-center flex-column">
         <div class="grade-title w-50 p-1">
           <h4 class="text-center text-shadow-lg font-title-graduation">Skills</h4>
         </div>
@@ -232,6 +232,10 @@
   padding: 8px;
 }
 
+.my-skills {
+  width: 50%;
+}
+
 .my-image {
   background-image: url('../img/photoperfil0.jpg');
   width: 200px;
@@ -269,7 +273,7 @@
 }
 
 .resume {
-  height: 280px;
+  height: 300px;
   background-color: white;
   width: 88%;
   margin-right: auto;
@@ -431,7 +435,6 @@ label {
     transform: translateY(0px);
     height: 630px;
     overflow-y: auto;
-    background-color: yellow;
   }
 
   .my-image {
@@ -461,7 +464,8 @@ label {
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-top: 150px;
+    margin-top: 10px;
+    height: 800px;
   }
 
   .experience {
@@ -478,6 +482,16 @@ label {
     width: 100% !important;
     margin-left: 0px !important;
     margin-right: 0px !important;
+  }
+
+  .my-skills {
+    width: 100%;
+    margin-top: -100px;
+  }
+
+  .skills-content {
+    margin-left: 0px;
+    width: 100% !important;
   }
 }
 </style>
