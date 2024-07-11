@@ -1,4 +1,24 @@
-<script setup></script>
+<script setup>
+import { ref } from 'vue'
+
+const emailActive = ref(false)
+
+function handleFocus(inputName) {
+  switch (inputName) {
+    case 'email':
+      emailActive.value = true
+      break
+  }
+}
+
+function handleBlur(inputName) {
+  switch (inputName) {
+    case 'email':
+      emailActive.value = false
+      break
+  }
+}
+</script>
 
 <template>
   <div class="container">
@@ -11,11 +31,29 @@
         <div class="form-containername">
           <div class="form-name">
             <span>Nome</span>
-            <input type="text" class="input-form" placeholder="Seu primeiro nome" />
+            <input
+              type="text"
+              class="input-form"
+              placeholder="Seu primeiro nome"
+              v-model="emailActive"
+              :class="{ 'active-border': emailActive }"
+              @focus="handleFocus('email')"
+              @blur="handleBlur('email')"
+            />
           </div>
           <div class="form-lastname">
             <span>Sobrenome</span>
             <input type="text" class="input-form" placeholder="Seu segundo nome" />
+          </div>
+        </div>
+        <div class="form-containername">
+          <div class="form-name">
+            <span>E-mail</span>
+            <input type="text" class="input-form" placeholder="Seu endereço de e-mail" />
+          </div>
+          <div class="form-lastname">
+            <span>Telefone</span>
+            <input type="text" class="input-form" placeholder="Seu número de telefone" />
           </div>
         </div>
       </div>
@@ -24,6 +62,10 @@
 </template>
 
 <style scoped>
+.input-form.active-border {
+  border-bottom: 2px solid blue;
+}
+
 .container {
   margin-top: 5%;
   height: 100vh;
@@ -40,7 +82,7 @@
   background-color: gray;
   width: 40%;
   height: 650px;
-  background-image: url('./img/pt4.jpg');
+  background-image: url('./img/bg-03.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
