@@ -365,7 +365,10 @@ label {
   margin-right: auto;
   margin-left: auto;
   margin-top: 5%;
-  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+  /* background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%); */
+  background: #4ecdc4;
+  background: -webkit-linear-gradient(to right, #556270, #4ecdc4);
+  background: linear-gradient(to right, #556270, #4ecdc4);
   border-radius: 5px;
 }
 
