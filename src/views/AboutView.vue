@@ -327,7 +327,7 @@ label {
 
 .perfil-icon {
   margin-right: 2px;
-  background-color: #6d8786;
+  background-color: #8cede8;
   width: 30%;
   height: 100%;
   border-radius: 8px 0px 0px 8px;
@@ -342,7 +342,7 @@ label {
 }
 
 .title-perfil {
-  background-color: #6d8786;
+  background-color: #8cede8;
   width: 70%;
   height: 100%;
   display: flex;
