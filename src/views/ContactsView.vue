@@ -1,29 +1,11 @@
-<script setup>
-import { ref } from 'vue'
-
-const emailActive = ref(false)
-
-function handleFocus(inputName) {
-  switch (inputName) {
-    case 'email':
-      emailActive.value = true
-      break
-  }
-}
-
-function handleBlur(inputName) {
-  switch (inputName) {
-    case 'email':
-      emailActive.value = false
-      break
-  }
-}
-</script>
+<script setup></script>
 
 <template>
   <div class="container">
     <div class="form-contact">
-      <div class="photo-character"></div>
+      <div class="photo-character">
+        <img src="/img/pt4.jpg" alt="Meu perfil" />
+      </div>
       <div class="contacts">
         <div class="title-contact">
           <h3>Contate-me</h3>
@@ -31,15 +13,7 @@ function handleBlur(inputName) {
         <div class="form-containername">
           <div class="form-name">
             <span>Nome</span>
-            <input
-              type="text"
-              class="input-form"
-              placeholder="Seu primeiro nome"
-              v-model="emailActive"
-              :class="{ 'active-border': emailActive }"
-              @focus="handleFocus('email')"
-              @blur="handleBlur('email')"
-            />
+            <input type="text" class="input-form" placeholder="Seu primeiro nome" />
           </div>
           <div class="form-lastname">
             <span>Sobrenome</span>
@@ -56,16 +30,25 @@ function handleBlur(inputName) {
             <input type="text" class="input-form" placeholder="Seu número de telefone" />
           </div>
         </div>
+        <div class="form-containermsg">
+          <div class="form-msg">
+            <span>Mensagem</span>
+            <input type="text" class="input-form" placeholder="Sua mensagem aqui" />
+          </div>
+        </div>
+        <div class="button-container">
+          <button class="submit-button">
+            SUBMIT
+            <span class="arrow-line"></span>
+            <span class="arrow-head">→</span>
+          </button>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <style scoped>
-.input-form.active-border {
-  border-bottom: 2px solid blue;
-}
-
 .container {
   margin-top: 5%;
   height: 100vh;
@@ -82,11 +65,12 @@ function handleBlur(inputName) {
   background-color: gray;
   width: 40%;
   height: 650px;
-  background-image: url('./img/bg-03.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
   border-radius: 5px 0px 0px 5px;
+}
+
+.photo-character img {
+  width: 100%;
+  height: 100%;
 }
 
 .contacts {
@@ -121,6 +105,21 @@ function handleBlur(inputName) {
   margin-top: 5%;
 }
 
+.form-containermsg {
+  display: flex;
+  width: 78%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  padding-left: 5px;
+}
+
+.form-msg {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
 .form-name,
 .form-lastname {
   display: flex;
@@ -140,6 +139,30 @@ span {
   background-color: transparent;
   font-size: 1em;
   outline: none;
+}
+
+.input-form:focus {
+  border-bottom: 3px solid #0f2422;
+}
+
+.submit-button {
+  border: none;
+  background-color: transparent;
+  color: #cc0000;
+  font-family: sans-serif;
+}
+
+.submit-button .arrow-line {
+  display: inline-block;
+  width: 100px;
+  height: 45px;
+  border-bottom: 2px solid #cc0000;
+}
+
+.submit-button .arrow-head {
+  display: inline-block;
+  color: #cc0000;
+  font-size: 2.5em;
 }
 
 @media (min-width: 361px) and (max-width: 425px) {
