@@ -4,7 +4,7 @@
   <div class="container">
     <div class="form-contact">
       <div class="photo-character">
-        <img src="/img/pt4.jpg" alt="Meu perfil" />
+        <img src="/img/pt1.jpg" alt="Meu perfil" />
       </div>
       <div class="contacts">
         <div class="title-contact">
@@ -33,14 +33,19 @@
         <div class="form-containermsg">
           <div class="form-msg">
             <span>Mensagem</span>
-            <input type="text" class="input-form" placeholder="Sua mensagem aqui" />
+            <textarea
+              name="Mensagem"
+              id="txtMessage"
+              rows="3"
+              placeholder="Sua mensagem aqui"
+              class="input-textarea"
+              maxlength="150"
+            ></textarea>
           </div>
         </div>
         <div class="button-container">
           <button class="submit-button">
-            SUBMIT
-            <span class="arrow-line"></span>
-            <span class="arrow-head">→</span>
+            <span class="arrow-head">Enviar<span class="arrow-line">→</span></span>
           </button>
         </div>
       </div>
@@ -59,24 +64,29 @@
   height: 650px;
   width: 100%;
   display: flex;
+  background-color: gray;
+  border-radius: 9px;
 }
 
 .photo-character {
   background-color: gray;
-  width: 40%;
+  width: 45%;
   height: 650px;
-  border-radius: 5px 0px 0px 5px;
+  border-radius: 10px 0px 0px 10px;
 }
 
 .photo-character img {
   width: 100%;
   height: 100%;
+  border-radius: 10px 0px 0px 10px;
 }
 
 .contacts {
-  background-color: rgb(236, 241, 241);
-  width: 60%;
-  border-radius: 0px 5px 5px 0px;
+  background: #4ecdc4;
+  background: -webkit-linear-gradient(to right, #556270, #4ecdc4);
+  background: linear-gradient(to right, #556270, #4ecdc4);
+  width: 55%;
+  border-radius: 0px 10px 10px 0px;
   display: flex;
   flex-direction: column;
   padding: 5px;
@@ -93,13 +103,14 @@
   font-family: 'Allerta Stencil', sans-serif;
   font-size: 2.8em;
   text-align: center;
+  color: black;
   border-bottom: 2px solid #0f2422;
 }
 
 .form-containername {
   display: flex;
   justify-content: space-around;
-  width: 80%;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 5%;
@@ -107,7 +118,7 @@
 
 .form-containermsg {
   display: flex;
-  width: 78%;
+  width: 86%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 5%;
@@ -130,6 +141,13 @@
 span {
   font-family: 'Allerta Stencil', sans-serif;
   margin-bottom: 5px;
+  color: black;
+  font-size: 1.2em;
+}
+
+::-webkit-input-placeholder {
+  color: #0f2422;
+  font-family: 'Allerta Stencil', sans-serif;
 }
 
 .input-form {
@@ -145,24 +163,53 @@ span {
   border-bottom: 3px solid #0f2422;
 }
 
+.input-textarea {
+  border: none;
+  border-bottom: 1px solid black;
+  height: 70px;
+  background-color: transparent;
+  font-size: 1em;
+  outline: none;
+}
+
+.input-textarea:focus {
+  border-bottom: 3px solid #0f2422;
+}
+
 .submit-button {
   border: none;
   background-color: transparent;
-  color: #cc0000;
   font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin: 30px auto 0px auto;
+  animation: point 0.5s infinite ease-in;
 }
 
 .submit-button .arrow-line {
-  display: inline-block;
   width: 100px;
   height: 45px;
-  border-bottom: 2px solid #cc0000;
+}
+
+@keyframes point {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
 }
 
 .submit-button .arrow-head {
   display: inline-block;
-  color: #cc0000;
-  font-size: 2.5em;
+  font-size: 1.8em;
+}
+
+textarea {
+  resize: none;
 }
 
 @media (min-width: 361px) and (max-width: 425px) {
@@ -174,17 +221,22 @@ span {
   .form-contact {
     flex-direction: column;
     width: 95%;
-    margin: 15% auto auto auto;
+    margin: 15% auto 5px auto;
+    height: 1000px;
+    border-radius: 8px 8px 0px 0px;
   }
 
   .photo-character {
     width: 100%;
-    height: 210px;
+    height: 270px;
     margin-left: auto;
     margin-right: auto;
     background-position: top center;
     background-size: cover;
-    border-radius: 5px 5px 0px 0px;
+  }
+
+  .photo-character img {
+    border-radius: 8px 8px 0px 0px;
   }
 
   .contacts {
@@ -193,7 +245,7 @@ span {
     display: flex;
     flex-direction: column;
     padding: 5px;
-    height: 400px;
+    height: 1000px;
   }
 
   .title-contact h3 {
@@ -214,6 +266,15 @@ span {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 15px;
+  }
+
+  .form-containermsg {
+    display: flex;
+    width: 93%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    padding-left: 5px;
   }
 }
 </style>
