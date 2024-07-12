@@ -212,6 +212,12 @@ textarea {
   resize: none;
 }
 
+@media (min-width: 500px) and (max-width: 800px) {
+  .form-contact {
+    overflow: auto;
+  }
+}
+
 @media (min-width: 361px) and (max-width: 425px) {
   .container {
     overflow: auto;
