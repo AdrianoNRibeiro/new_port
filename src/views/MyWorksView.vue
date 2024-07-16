@@ -15,17 +15,165 @@
             <a href="https://pokevit-adriano.netlify.app/" target="tela"
               ><img src="/img/Pokevit.png" alt=""
             /></a>
-            <p>Pokevit</p>
+            <p>
+              <a href="https://pokevit-adriano.netlify.app/" target="tela" class="link-website"
+                >Pokevit.com</a
+              >
+            </p>
           </div>
-          <div class="grid-item">Item 2</div>
-          <div class="grid-item">Item 3</div>
-          <div class="grid-item">Item 4</div>
-          <div class="grid-item">Item 5</div>
-          <div class="grid-item">Item 6</div>
-          <div class="grid-item">Item 7</div>
-          <div class="grid-item">Item 8</div>
-          <div class="grid-item">Item 9</div>
-          <div class="grid-item">Item 10</div>
+          <div class="grid-item">
+            <a href="https://adrianonribeiro.github.io/JOGO_ONEPIECE_MEMORY/" target="tela"
+              ><img src="/img/jogo_da_memoria.png" alt=""
+            /></a>
+            <p>
+              <a
+                href="https://adrianonribeiro.github.io/JOGO_ONEPIECE_MEMORY/"
+                target="tela"
+                class="link-website"
+                >jogodamemoria.com</a
+              >
+            </p>
+          </div>
+          <div class="grid-item">
+            <a
+              href="https://makeyouburger-nv6d4ikt2-adrianonribeiros-projects.vercel.app/"
+              target="tela"
+              ><img src="/img/Pokevit.png" alt=""
+            /></a>
+            <p>
+              <a
+                href="https://makeyouburger-nv6d4ikt2-adrianonribeiros-projects.vercel.app/"
+                target="tela"
+                class="link-website"
+                >makeyourburger.com</a
+              >
+            </p>
+          </div>
+          <div class="grid-item">
+            <a
+              href="https://adrianonribeiro.github.io/TI-CODE-CARDS--TCC-/pages/cartas.html"
+              target="tela"
+              ><img src="/img/Pokevit.png" alt=""
+            /></a>
+            <p>
+              <a
+                href="https://adrianonribeiro.github.io/TI-CODE-CARDS--TCC-/pages/cartas.html"
+                target="tela"
+                class="link-website"
+                >cardgame.com</a
+              >
+            </p>
+          </div>
+          <div class="grid-item">
+            <a href="https://adrianonribeiro.github.io/PAGINA_CONSULTA_TEMPO/" target="tela"
+              ><img src="/img/Pokevit.png" alt=""
+            /></a>
+            <p>
+              <a
+                href="https://adrianonribeiro.github.io/PAGINA_CONSULTA_TEMPO/"
+                target="tela"
+                class="link-website"
+                >consultatempo.com</a
+              >
+            </p>
+          </div>
+          <div class="grid-item">
+            <a href="https://adrianonribeiro.github.io/projeto-social/" target="tela"
+              ><img src="/img/Pokevit.png" alt=""
+            /></a>
+            <p>
+              <a
+                href="https://adrianonribeiro.github.io/projeto-social/"
+                target="tela"
+                class="link-website"
+                >projeto_social.com</a
+              >
+            </p>
+          </div>
+          <div class="grid-item">
+            <a href="https://adrianonribeiro.github.io/HTML/site_android/index.html" target="tela"
+              ><img src="/img/Pokevit.png" alt=""
+            /></a>
+            <p>
+              <a
+                href="https://adrianonribeiro.github.io/HTML/site_android/index.html"
+                target="tela"
+                class="link-website"
+                >doc_android.com</a
+              >
+            </p>
+          </div>
+          <div class="grid-item">
+            <a href="https://adrianonribeiro.github.io/HTML/site_flex/index.html" target="tela"
+              ><img src="/img/Pokevit.png" alt=""
+            /></a>
+            <p>
+              <a
+                href="https://adrianonribeiro.github.io/HTML/site_flex/index.html"
+                target="tela"
+                class="link-website"
+                >portfolio_example.com</a
+              >
+            </p>
+          </div>
+          <div class="grid-item">
+            <a href="https://adrianonribeiro.github.io/HTML/desafio002/cordel.html" target="tela"
+              ><img src="/img/Pokevit.png" alt=""
+            /></a>
+            <p>
+              <a
+                href="https://adrianonribeiro.github.io/HTML/desafio002/cordel.html"
+                target="tela"
+                class="link-website"
+                >cordel.com</a
+              >
+            </p>
+          </div>
+          <div class="grid-item">
+            <a
+              href="https://adrianonribeiro.github.io/HTML/freecode/treinamento/formulario.html"
+              target="tela"
+              ><img src="/img/Pokevit.png" alt=""
+            /></a>
+            <p>
+              <a
+                href="https://adrianonribeiro.github.io/HTML/freecode/treinamento/formulario.html"
+                target="tela"
+                class="link-website"
+                >formulario.com</a
+              >
+            </p>
+          </div>
+          <div class="grid-item">
+            <a
+              href="https://adrianonribeiro.github.io/HTML/paginas_para_port/site_photos/index.html"
+              target="tela"
+              ><img src="/img/Pokevit.png" alt=""
+            /></a>
+            <p>
+              <a
+                href="https://adrianonribeiro.github.io/HTML/paginas_para_port/site_photos/index.html"
+                target="tela"
+                class="link-website"
+                >fotografia.com</a
+              >
+            </p>
+          </div>
+          <div class="grid-item">
+            <a
+              href="https://adrianonribeiro.github.io/JAVASCRIPT/exDiaTardeNoite/index.html"
+              target="tela"
+              ><img src="/img/Pokevit.png" alt=""
+            /></a>
+            <p>
+              <a
+                href="https://adrianonribeiro.github.io/JAVASCRIPT/exDiaTardeNoite/index.html"
+                target="tela"
+                class="link-website"
+                >hora_do_dia.com</a
+              >
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -93,21 +241,57 @@
 .grid-works {
   width: 98%;
   height: 550px;
-  border: 1px solid #fff;
   margin: 0px auto;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
 .grid-item {
-  flex: 1 0 20%;
   box-sizing: border-box;
   border: 1px solid #ccc;
-  padding: 10px;
+  padding: 5px;
+  height: 280px;
+  width: 16%;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.grid-item:hover {
+  animation: scaleAnimation 0.3s ease-in-out forwards;
+}
+
+@keyframes scaleAnimation {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.01);
+  }
 }
 
 .grid-item img {
-  width: 90%;
+  width: 100%;
+  height: 240px;
+  border-radius: 5px;
+}
+
+.grid-item p {
+  font-family: 'Allerta Stencil', sans-serif;
+  text-align: center;
+  font-size: 1em;
+}
+
+.link-website {
+  color: #0f2422;
+  text-decoration: none;
+}
+
+.link-website:hover {
+  text-decoration: underline;
+  text-decoration-color: #0f2422;
 }
 
 @media (min-width: 361px) and (max-width: 425px) {
