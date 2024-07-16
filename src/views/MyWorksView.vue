@@ -233,9 +233,10 @@
 
 .comments h3 {
   font-family: 'Allerta Stencil', sans-serif;
-  color: #0f2422;
+  color: #fff;
   font-size: 1.4em;
   text-align: center;
+  margin-top: 5px;
 }
 
 .grid-works {
@@ -257,6 +258,7 @@
   display: flex;
   flex-direction: column;
   cursor: pointer;
+  background-color: #0f2422;
 }
 
 .grid-item:hover {
@@ -285,7 +287,7 @@
 }
 
 .link-website {
-  color: #0f2422;
+  color: #fff;
   text-decoration: none;
 }
 
