@@ -1,46 +1,46 @@
 <script setup>
-import { ref, onMounted } from 'vue'
-import { useRouter } from 'vue-router'
+// import { ref, onMounted } from 'vue'
+// import { useRouter } from 'vue-router'
 
-const router = useRouter()
-const counter = ref(10)
-const showbutton = ref(true)
-const animatedButton = ref(null)
+// const router = useRouter()
+// const counter = ref(10)
+// const showbutton = ref(true)
+// const animatedButton = ref(null)
 
-function decrementCounter() {
-  if (counter.value > 0) {
-    counter.value--
-  }
+// function decrementCounter() {
+//   if (counter.value > 0) {
+//     counter.value--
+//   }
 
-  if (counter.value == 0) {
-    setTimeout(() => {
-      hideButton()
-    }, 1900)
-  }
-}
+//   if (counter.value == 0) {
+//     setTimeout(() => {
+//       hideButton()
+//     }, 1900)
+//   }
+// }
 
-function handleAnimationEnd() {
-  setTimeout(() => {
-    showbutton.value = false
-  }, 1000)
-}
+// function handleAnimationEnd() {
+//   setTimeout(() => {
+//     showbutton.value = false
+//   }, 1000)
+// }
 
-function navigateToMyWorksView() {
-  router.push('/works')
-}
+// function navigateToMyWorksView() {
+//   router.push('/works')
+// }
 
-const hideButton = () => {
-  let el = document.querySelectorAll('.box-button')
-  el.forEach((element) => element.classList.add('remove'))
-}
+// const hideButton = () => {
+//   let el = document.querySelectorAll('.box-button')
+//   el.forEach((element) => element.classList.add('remove'))
+// }
 
-onMounted(() => {
-  setInterval(decrementCounter, 1000)
+// onMounted(() => {
+//   setInterval(decrementCounter, 1000)
 
-  if (animatedButton.value) {
-    animatedButton.value.addEventListener('animationend', handleAnimationEnd)
-  }
-})
+//   if (animatedButton.value) {
+//     animatedButton.value.addEventListener('animationend', handleAnimationEnd)
+//   }
+// })
 </script>
 
 <template>
@@ -52,11 +52,9 @@ onMounted(() => {
       </section>
       <section class="section-content">
         <div class="description">
-          <!-- <p>Passionate about programming and creating content for all types of audiences.</p> -->
           <p>Apaixonado com programação e criação de conteúdos para todos os tipos de públicos</p>
         </div>
-        <div class="interation">
-          <!-- <p>To find out more about:</p> -->
+        <!-- <div class="interation">
           <p>Para saber mais:</p>
           <div class="box-button">
             <button
@@ -72,6 +70,12 @@ onMounted(() => {
             </button>
           </div>
           <p class="p-restart" v-if="counter == 0">Atualize a página</p>
+        </div> -->
+        <div class="interation">
+          <p>Para saber mais:</p>
+          <div class="box-button">
+            <button type="button" class="btn btn-warning btn-size-adjust">Click aqui</button>
+          </div>
         </div>
       </section>
     </main>
@@ -193,6 +197,22 @@ p {
   color: red;
   font-weight: bold;
   font-size: 1em;
+}
+
+.btn-size-adjust:hover {
+  animation: pulse 0.5s infinite ease-in;
+}
+
+@keyframes pulse {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
 }
 
 @media (max-width: 360px) {

@@ -336,10 +336,5 @@
     font-size: 0.8em;
     margin-top: 5px;
   }
-
-  .link-website {
-    color: #0f2422;
-    text-decoration: none;
-  }
 }
 </style>
