@@ -17,7 +17,7 @@
             /></a>
             <p>
               <a href="https://pokevit-adriano.netlify.app/" target="tela" class="link-website"
-                >Pokevit.com</a
+                >pokevit.com</a
               >
             </p>
           </div>
@@ -38,7 +38,7 @@
             <a
               href="https://makeyouburger-nv6d4ikt2-adrianonribeiros-projects.vercel.app/"
               target="tela"
-              ><img src="/img/Pokevit.png" alt=""
+              ><img src="/img/make_your_burger.png" alt=""
             /></a>
             <p>
               <a
@@ -53,7 +53,7 @@
             <a
               href="https://adrianonribeiro.github.io/TI-CODE-CARDS--TCC-/pages/cartas.html"
               target="tela"
-              ><img src="/img/Pokevit.png" alt=""
+              ><img src="/img/card_game.png" alt=""
             /></a>
             <p>
               <a
@@ -66,7 +66,7 @@
           </div>
           <div class="grid-item">
             <a href="https://adrianonribeiro.github.io/PAGINA_CONSULTA_TEMPO/" target="tela"
-              ><img src="/img/Pokevit.png" alt=""
+              ><img src="/img/previsao.png" alt=""
             /></a>
             <p>
               <a
@@ -79,7 +79,7 @@
           </div>
           <div class="grid-item">
             <a href="https://adrianonribeiro.github.io/projeto-social/" target="tela"
-              ><img src="/img/Pokevit.png" alt=""
+              ><img src="/img/proj_social.png" alt=""
             /></a>
             <p>
               <a
@@ -92,7 +92,7 @@
           </div>
           <div class="grid-item">
             <a href="https://adrianonribeiro.github.io/HTML/site_android/index.html" target="tela"
-              ><img src="/img/Pokevit.png" alt=""
+              ><img src="/img/android_curiosidade.png" alt=""
             /></a>
             <p>
               <a
@@ -105,7 +105,7 @@
           </div>
           <div class="grid-item">
             <a href="https://adrianonribeiro.github.io/HTML/site_flex/index.html" target="tela"
-              ><img src="/img/Pokevit.png" alt=""
+              ><img src="/img/port_example.png" alt=""
             /></a>
             <p>
               <a
@@ -118,7 +118,7 @@
           </div>
           <div class="grid-item">
             <a href="https://adrianonribeiro.github.io/HTML/desafio002/cordel.html" target="tela"
-              ><img src="/img/Pokevit.png" alt=""
+              ><img src="/img/cordel.png" alt=""
             /></a>
             <p>
               <a
@@ -133,7 +133,7 @@
             <a
               href="https://adrianonribeiro.github.io/HTML/freecode/treinamento/formulario.html"
               target="tela"
-              ><img src="/img/Pokevit.png" alt=""
+              ><img src="/img/fomulario.png" alt=""
             /></a>
             <p>
               <a
@@ -148,7 +148,7 @@
             <a
               href="https://adrianonribeiro.github.io/HTML/paginas_para_port/site_photos/index.html"
               target="tela"
-              ><img src="/img/Pokevit.png" alt=""
+              ><img src="/img/fotografia.png" alt=""
             /></a>
             <p>
               <a
@@ -163,7 +163,7 @@
             <a
               href="https://adrianonribeiro.github.io/JAVASCRIPT/exDiaTardeNoite/index.html"
               target="tela"
-              ><img src="/img/Pokevit.png" alt=""
+              ><img src="/img/hora.png" alt=""
             /></a>
             <p>
               <a
@@ -234,7 +234,7 @@
 .comments h3 {
   font-family: 'Allerta Stencil', sans-serif;
   color: #0f2422;
-  font-size: 1.5em;
+  font-size: 1.4em;
   text-align: center;
 }
 
@@ -308,6 +308,38 @@
   .title-works h1 {
     font-size: 1.5em;
     height: 40px;
+  }
+
+  .comments {
+    width: 80%;
+  }
+
+  .comments h3 {
+    font-size: 0.9em;
+  }
+
+  .grid-works {
+    width: 99%;
+    overflow: auto;
+  }
+
+  .grid-item {
+    height: 250px;
+    width: 50%;
+  }
+
+  .grid-item img {
+    height: 210px;
+  }
+
+  .grid-item p {
+    font-size: 0.8em;
+    margin-top: 5px;
+  }
+
+  .link-website {
+    color: #0f2422;
+    text-decoration: none;
   }
 }
 </style>
