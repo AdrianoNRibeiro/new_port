@@ -47,12 +47,12 @@
   <div class="principal">
     <main class="main-describe">
       <section class="section-title">
-        <h2>HI, I'M ADRIANO RIBEIRO</h2>
-        <h3>A FULLSTACK DEVELOPER</h3>
+        <h2>OLÁ, EU SOU ADRIANO RIBEIRO</h2>
+        <h3>UM DESENVOLVEDOR FULLSTACK</h3>
       </section>
       <section class="section-content">
         <div class="description">
-          <p>Apaixonado com programação e criação de conteúdos para todos os tipos de públicos</p>
+          <p>Apaixonado por programação e criação de conteúdos para todos os tipos de públicos.</p>
         </div>
         <!-- <div class="interation">
           <p>Para saber mais:</p>
@@ -74,7 +74,7 @@
         <div class="interation">
           <p>Para saber mais:</p>
           <div class="box-button">
-            <button type="button" class="btn btn-warning btn-size-adjust">Click aqui</button>
+            <button type="button" class="btn btn-warning btn-size-adjust">Clique aqui</button>
           </div>
         </div>
       </section>
@@ -300,6 +300,16 @@ p {
     text-align: center;
   }
 
+  .section-title {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section-title h2 {
+    font-size: 2.5em;
+    text-align: center;
+  }
+
   .aside-perfil {
     width: 100%;
     height: 35vh;
@@ -364,7 +374,7 @@ p {
   }
 }
 
-@media (min-width: 426px) and (max-width: 560px) {
+@media (min-width: 426px) and (max-width: 779px) {
   .principal {
     flex-direction: column;
   }
@@ -379,18 +389,22 @@ p {
     height: 40vh;
   }
 
+  .section-content {
+    overflow: auto;
+  }
+
   h2 {
-    font-size: 3.5em;
+    font-size: 2.5em;
     text-align: center;
   }
 
   h3 {
     text-align: center;
-    font-size: 1.7em;
+    font-size: 1.1em;
   }
 
   p {
-    font-size: 0.9em;
+    font-size: 0.8em;
   }
 
   .aside-perfil {
@@ -435,7 +449,56 @@ p {
 
   .description p {
     text-align: center;
-    font-size: 1em;
+    font-size: 0.9em;
+  }
+}
+
+@media (min-width: 780px) and (max-width: 900px) {
+  .main-describe {
+    width: 100%;
+    height: 60vh;
+    border: 1px solid #fff;
+  }
+
+  .section-title h2 {
+    font-size: 2.6em;
+    text-align: center;
+  }
+
+  .section-title h3 {
+    font-size: 1.4em;
+    text-align: center;
+  }
+
+  .aside-perfil {
+    width: 100%;
+    height: 40vh;
+  }
+
+  .section-content {
+    border: 1px solid yellow;
+    width: 100%;
+    margin-left: -10px;
+  }
+
+  .section-content p {
+    font-size: 0.9em;
+    text-align: center;
+  }
+
+  .box-button .btn-size-adjust {
+    width: 111px;
+    height: 26px;
+  }
+
+  .interation {
+    border: 1px solid red;
+    justify-content: center;
+  }
+
+  .interation p {
+    font-size: 0.9em;
+    text-align: center;
   }
 }
 </style>
