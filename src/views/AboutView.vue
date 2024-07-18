@@ -79,7 +79,7 @@
     </div>
     <div class="header-resume">
       <div class="perfil-icon">
-        <img src="/img/icon-book.png" alt="" class="w-75" />
+        <img src="/img/icon-book.png" alt="" class="w-75 img-book" />
       </div>
       <div class="title-perfil"><h5>CURRÍCULO</h5></div>
     </div>
@@ -398,7 +398,7 @@ label {
   width: 50%;
 }
 
-@media (min-width: 361px) and (max-width: 425px) {
+@media (min-width: 361px) and (max-width: 1100px) {
   .container-about {
     width: 90%;
     height: 100vh;
@@ -423,6 +423,10 @@ label {
 
   .perfil-icon {
     width: 22%;
+  }
+
+  .perfil-icon img {
+    width: 75%;
   }
 
   .header-perfil h5,
@@ -495,6 +499,10 @@ label {
   .skills-content {
     margin-left: 0px;
     width: 100% !important;
+  }
+
+  .img-book {
+    width: 55% !important;
   }
 }
 </style>

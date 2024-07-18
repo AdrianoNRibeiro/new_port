@@ -212,9 +212,58 @@ textarea {
   resize: none;
 }
 
-@media (min-width: 500px) and (max-width: 800px) {
-  .form-contact {
+@media (min-width: 426px) and (max-width: 800px) {
+  .container {
     overflow: auto;
+    overflow: auto;
+  }
+
+  .form-contact {
+    flex-direction: column;
+    width: 85%;
+    margin: 13% auto 0px auto;
+    height: 1020px;
+    overflow: auto;
+  }
+
+  .photo-character {
+    width: 100%;
+    height: 230px;
+  }
+
+  .contacts {
+    width: 100%;
+  }
+
+  .form-containername {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .form-name,
+  .form-lastname {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .form-containermsg {
+    width: 100%;
+  }
+
+  .form-msg {
+    width: 100%;
+  }
+
+  .input-textarea {
+    width: 100%;
+  }
+
+  .form-containername .input-form {
+    width: 100%;
+  }
+
+  .title-contact h3 {
+    font-size: 1.9em;
   }
 }
 

@@ -296,7 +296,7 @@
   text-decoration-color: #0f2422;
 }
 
-@media (min-width: 361px) and (max-width: 425px) {
+@media (min-width: 361px) and (max-width: 699px) {
   .content-works {
     height: 710px;
     margin-top: 15%;
@@ -323,6 +323,8 @@
   .grid-works {
     width: 99%;
     overflow: auto;
+    height: 470px;
+    border-radius: 9px;
   }
 
   .grid-item {
@@ -338,5 +340,82 @@
     font-size: 0.8em;
     margin-top: 5px;
   }
+}
+
+@media (min-width: 700px) and (max-width: 1100px) {
+  .content-works {
+    height: 710px;
+    margin-top: 8%;
+    margin-bottom: 0px;
+  }
+
+  .title-works {
+    width: 90%;
+  }
+
+  .title-works h1 {
+    font-size: 2.5em;
+    height: 40px;
+  }
+
+  .comments {
+    width: 80%;
+  }
+
+  .comments h3 {
+    font-size: 0.9em;
+  }
+
+  .grid-works {
+    width: 99%;
+    overflow: auto;
+    height: 470px;
+    border-radius: 9px;
+  }
+
+  .grid-item {
+    height: 250px;
+    width: 30%;
+  }
+}
+
+@media (min-width: 1101px) and (max-width: 1600px) {
+  .content-works {
+    height: 710px;
+    margin-top: 8%;
+    margin-bottom: 0px;
+  }
+
+  .title-works {
+    width: 90%;
+  }
+
+  .title-works h1 {
+    font-size: 2.5em;
+    height: 40px;
+  }
+
+  .comments {
+    width: 80%;
+  }
+
+  .comments h3 {
+    font-size: 0.9em;
+  }
+
+  .grid-works {
+    width: 99%;
+    overflow: auto;
+    height: 470px;
+    border-radius: 9px;
+  }
+
+  .grid-item {
+    height: 250px;
+    width: 20%;
+  }
+}
+
+@media (min-width: 1601px) {
 }
 </style>

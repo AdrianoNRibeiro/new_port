@@ -1,8 +1,7 @@
 <script setup>
-// import { ref, onMounted } from 'vue'
-// import { useRouter } from 'vue-router'
+import { useRouter } from 'vue-router'
 
-// const router = useRouter()
+const router = useRouter()
 // const counter = ref(10)
 // const showbutton = ref(true)
 // const animatedButton = ref(null)
@@ -25,9 +24,9 @@
 //   }, 1000)
 // }
 
-// function navigateToMyWorksView() {
-//   router.push('/works')
-// }
+function navigateToMyWorksView() {
+  router.push('/works')
+}
 
 // const hideButton = () => {
 //   let el = document.querySelectorAll('.box-button')
@@ -74,7 +73,13 @@
         <div class="interation">
           <p>Para saber mais:</p>
           <div class="box-button">
-            <button type="button" class="btn btn-warning btn-size-adjust">Clique aqui</button>
+            <button
+              type="button"
+              class="btn btn-warning btn-size-adjust"
+              @click="navigateToMyWorksView"
+            >
+              Clique aqui
+            </button>
           </div>
         </div>
       </section>
@@ -381,20 +386,20 @@ p {
 
   .main-describe {
     width: 100%;
-    height: 50vh;
+    height: auto;
   }
 
   .aside-perfil {
     width: 100%;
-    height: 40vh;
+    height: auto;
   }
 
   .section-content {
     overflow: auto;
   }
 
-  h2 {
-    font-size: 2.5em;
+  .section-title h2 {
+    font-size: 2.4em;
     text-align: center;
   }
 
@@ -438,7 +443,7 @@ p {
   }
 
   .btn-size-adjust {
-    width: 60%;
+    width: 50%;
     height: 30%;
     margin-bottom: 15px;
   }
@@ -450,6 +455,10 @@ p {
   .description p {
     text-align: center;
     font-size: 0.9em;
+  }
+
+  .img-perfil {
+    width: 80% !important;
   }
 }
 
