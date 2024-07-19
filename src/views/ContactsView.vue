@@ -1,4 +1,32 @@
-<script setup></script>
+<script setup>
+import { ref } from 'vue'
+
+let name = ref('')
+let lastname = ref('')
+let email = ref('')
+let telephone = ref('')
+let txtMessage = ref('')
+let errors = ref([])
+
+const clearErrors = () => {
+  errors.value = []
+}
+
+const checkForm = () => {
+  clearErrors()
+
+  if (!name.value || !lastname.value || !email.value || !telephone.value || !txtMessage.value) {
+    errors.value.push('Preencha todos os campos.')
+  }
+
+  // Adicione mais verificações específicas conforme necessário
+
+  if (errors.value.length === 0) {
+    console.log('Formulário válido')
+    // Aqui você pode adicionar a lógica para enviar o formulário ou realizar outras ações
+  }
+}
+</script>
 
 <template>
   <div class="container">
@@ -13,38 +41,63 @@
         <div class="form-containername">
           <div class="form-name">
             <span>Nome</span>
-            <input type="text" class="input-form" placeholder="Seu primeiro nome" />
+            <input
+              type="text"
+              name="name"
+              class="input-form"
+              placeholder="Seu primeiro nome"
+              @input="name.value = $event.target.value"
+            />
           </div>
           <div class="form-lastname">
             <span>Sobrenome</span>
-            <input type="text" class="input-form" placeholder="Seu segundo nome" />
+            <input
+              type="text"
+              name="lastname"
+              class="input-form"
+              placeholder="Seu segundo nome"
+              @input="lastname.value = $event.target.value"
+            />
           </div>
         </div>
         <div class="form-containername">
           <div class="form-name">
             <span>E-mail</span>
-            <input type="text" class="input-form" placeholder="Seu endereço de e-mail" />
+            <input
+              type="text"
+              name="email"
+              class="input-form"
+              placeholder="Seu endereço de e-mail"
+              @input="email.value = $event.target.value"
+            />
           </div>
           <div class="form-lastname">
             <span>Telefone</span>
-            <input type="text" class="input-form" placeholder="Seu número de telefone" />
+            <input
+              type="text"
+              name="telephone"
+              class="input-form"
+              placeholder="Seu número de telefone"
+              @input="telephone.value = $event.target.value"
+            />
           </div>
         </div>
         <div class="form-containermsg">
           <div class="form-msg">
             <span>Mensagem</span>
             <textarea
-              name="Mensagem"
+              name="mensagem"
               id="txtMessage"
               rows="3"
               placeholder="Sua mensagem aqui"
               class="input-textarea"
               maxlength="150"
+              @input="txtMessage.value = $event.target.value"
             ></textarea>
           </div>
         </div>
         <div class="button-container">
-          <button class="submit-button">
+          <button class="submit-button" @click.prevent="checkForm" type="sumbmit">
             <span class="arrow-head">Enviar<span class="arrow-line">→</span></span>
           </button>
         </div>
