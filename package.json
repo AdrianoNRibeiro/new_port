@@ -11,6 +11,7 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "my_resume": "file:",
     "vue": "^3.4.29",
     "vue-router": "^4.3.3",
     "vuelidate": "^0.7.7"

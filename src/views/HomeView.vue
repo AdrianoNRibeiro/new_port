@@ -2,44 +2,10 @@
 import { useRouter } from 'vue-router'
 
 const router = useRouter()
-// const counter = ref(10)
-// const showbutton = ref(true)
-// const animatedButton = ref(null)
-
-// function decrementCounter() {
-//   if (counter.value > 0) {
-//     counter.value--
-//   }
-
-//   if (counter.value == 0) {
-//     setTimeout(() => {
-//       hideButton()
-//     }, 1900)
-//   }
-// }
-
-// function handleAnimationEnd() {
-//   setTimeout(() => {
-//     showbutton.value = false
-//   }, 1000)
-// }
 
 function navigateToMyWorksView() {
   router.push('/works')
 }
-
-// const hideButton = () => {
-//   let el = document.querySelectorAll('.box-button')
-//   el.forEach((element) => element.classList.add('remove'))
-// }
-
-// onMounted(() => {
-//   setInterval(decrementCounter, 1000)
-
-//   if (animatedButton.value) {
-//     animatedButton.value.addEventListener('animationend', handleAnimationEnd)
-//   }
-// })
 </script>
 
 <template>
@@ -53,23 +19,6 @@ function navigateToMyWorksView() {
         <div class="description">
           <p>Apaixonado por programação e criação de conteúdos para todos os tipos de públicos.</p>
         </div>
-        <!-- <div class="interation">
-          <p>Para saber mais:</p>
-          <div class="box-button">
-            <button
-              v-if="showbutton"
-              ref="animatedButton"
-              type="button"
-              class="btn btn-warning btn-size-adjust"
-              :class="{ animate__hinge: counter === 0 }"
-              @animationend="handleAnimationEnd"
-              @click="navigateToMyWorksView"
-            >
-              Click aqui em {{ counter }}
-            </button>
-          </div>
-          <p class="p-restart" v-if="counter == 0">Atualize a página</p>
-        </div> -->
         <div class="interation">
           <p>Para saber mais:</p>
           <div class="box-button">

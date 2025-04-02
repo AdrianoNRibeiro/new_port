@@ -1,12 +1,16 @@
 <script setup>
+import AboutSite from './components/AboutSite.vue'
 import FooterSiteVue from './components/FooterSite.vue'
 import MenuSite from './components/MenuSite.vue'
+import MyWorksSite from './components/MyWorksSite.vue'
 </script>
 
 <template>
   <div class="ct-total">
     <MenuSite />
     <router-view></router-view>
+    <MyWorksSite />
+    <AboutSite />
     <FooterSiteVue />
   </div>
 </template>
@@ -28,13 +32,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow-x: hidden;
-  overflow-y: hidden;
 }
 
 .ct-total {
   width: 100%;
-  height: 100vh;
-  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 </style>
