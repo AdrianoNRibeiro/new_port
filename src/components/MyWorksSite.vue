@@ -188,11 +188,11 @@
   justify-content: center;
   align-items: center;
   margin-top: 14%;
-  border: 1px solid black;
+  background-image: linear-gradient(to right, #010f00, #232723);
 }
 
 .content-works {
-  width: 90%;
+  width: 80%;
   height: 700px;
   margin-bottom: 80px;
   border-radius: 9px;
