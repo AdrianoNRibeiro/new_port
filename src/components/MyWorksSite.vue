@@ -183,7 +183,7 @@
 <style scoped>
 .container-myworks {
   width: 100%;
-  height: 100vh;
+  height: 690px;
   display: flex;
   justify-content: center;
   align-items: center;

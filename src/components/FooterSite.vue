@@ -15,7 +15,7 @@
     </div>
     <div class="enterprise">
       <p>
-        <span style="font-family: 'Sixtyfour', sans-serif; font-size: 0.9em">AR_DIGITAL</span> -
+        <span style="font-family: 'Sixtyfour', sans-serif; font-size: 0.8em">AR_DIGITAL</span> -
         Developer
       </p>
     </div>
@@ -32,7 +32,7 @@
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 15vh;
+  height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,11 +46,11 @@
 .links {
   display: flex;
   justify-content: space-around;
-  width: 8%;
+  width: 5%;
 }
 
 .box-link {
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 .box-link img {
@@ -63,15 +63,15 @@
 }
 
 .enterprise {
-  height: 35px;
+  height: 30px;
 }
 
 .current-year {
-  height: 20px;
+  height: 18px;
 }
 
 .current-year p {
-  font-size: 0.8em;
+  font-size: 0.7em;
 }
 
 @media (min-width: 361px) and (max-width: 425px) {

@@ -295,7 +295,7 @@
 }
 
 .resume {
-  height: 300px;
+  height: 275px;
   background-color: white;
   width: 80%;
   margin-right: auto;
