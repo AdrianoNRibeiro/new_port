@@ -411,14 +411,14 @@ label {
   .container-about {
     width: 90%;
     height: 100vh;
-    margin-top: 75px;
+    margin-top: 280px;
     overflow-y: auto;
   }
 
   .header-perfil,
   .header-resume {
-    width: 60%;
-    height: 6%;
+    width: 50%;
+    height: 5%;
     background-color: transparent;
     display: flex;
     align-items: center;
@@ -435,7 +435,7 @@ label {
   }
 
   .perfil-icon img {
-    width: 75%;
+    width: 80%;
   }
 
   .header-perfil h5,
@@ -454,8 +454,8 @@ label {
   }
 
   .my-image {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
   }
 
   .name-developer {
@@ -511,6 +511,10 @@ label {
 
   .img-book {
     width: 55% !important;
+  }
+
+  .my-name {
+    font-size: 2.5em;
   }
 }
 </style>

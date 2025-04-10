@@ -120,11 +120,12 @@ p {
 
 .aside-perfil {
   width: 50%;
-  height: 70vh;
+  height: 60vh;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 8px;
+  margin-top: 6%;
 }
 
 .aside-perfil img {
@@ -335,12 +336,12 @@ p {
 
   .main-describe {
     width: 100%;
-    height: auto;
+    height: 450px;
   }
 
   .aside-perfil {
     width: 100%;
-    height: auto;
+    height: 200px;
   }
 
   .section-content {
@@ -348,13 +349,13 @@ p {
   }
 
   .section-title h2 {
-    font-size: 2.4em;
+    font-size: 2.9em;
     text-align: center;
   }
 
   h3 {
     text-align: center;
-    font-size: 1.1em;
+    font-size: 1.8em;
   }
 
   p {
